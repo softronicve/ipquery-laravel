@@ -6,6 +6,7 @@ use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
 use Softronic\Ipquery\Ipquery;
+use Illuminate\Support\Facades\Cache;
 
 class ServiceTest extends TestCase
 {

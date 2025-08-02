@@ -1,6 +1,6 @@
 <?php
 
-namespace TuUsuario\Ipquery\Facades;
+namespace Softronic\Ipquery\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

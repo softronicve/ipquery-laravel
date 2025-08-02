@@ -3,7 +3,6 @@
 namespace Softronic\Ipquery\Tests;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Cache;
 use Softronic\Ipquery\Facades\Ipquery;
 use Softronic\Ipquery\Middleware\IpqueryMiddleware;
 use Mockery as m;

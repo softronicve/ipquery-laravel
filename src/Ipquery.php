@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Cache;
 
 class Ipquery
 {
-    protected $client;
+    public $client;
     protected $baseUrl = 'https://api.ipquery.io/';
 
     public function __construct()
