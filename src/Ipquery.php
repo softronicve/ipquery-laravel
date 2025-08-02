@@ -37,6 +37,7 @@ class Ipquery
             } catch (RequestException $e) {
                 return [
                     'error' => 'IPQuery API error: ' . $e->getMessage(),
+                    'success' => false,
                     'ip' => $targetIp
                 ];
             }
@@ -46,11 +47,11 @@ class Ipquery
     protected function formatResponse(array $data): array
     {
         return [
+            'success' => true,
             'ip' => $data['ip'] ?? null,
             'isp' => $data['isp'] ?? null,
             'location' => $data['location'] ?? null,
             'risk' => $data['risk'] ?? null,
-            'data' => $data
         ];
     }
 }

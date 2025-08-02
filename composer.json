@@ -1,14 +1,22 @@
 {
     "name": "softronicve/ipquery-laravel",
     "description": "Laravel package for ipquery.io",
+    "version": "1.0.1",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Leonardo Alvarado",
             "email": "leonardoalvarado2013@gmail.com"
+        },
+        {
+            "name": "Softronic",
+            "email": "desarrollosoftronic@gmail.com",
+            "homepage": "https://www.softronic.dev/"
         }
     ],
+    "homepage": "https://github.com/softronicve/ipquery-laravel",
+    "keywords": ["Laravel", "ipquery","ipquerylaravel"],
     "require": {
         "php": "^8.0",
         "guzzlehttp/guzzle": "^7.0",
@@ -43,6 +51,6 @@
             }
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true
 }
