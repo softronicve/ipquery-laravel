@@ -1,3 +1,3 @@
 ## Instalación
 ```bash
-composer softronicve/ipquery-laravel
+composer require softronicve/ipquery-laravel
