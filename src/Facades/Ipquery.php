@@ -8,6 +8,6 @@ class Ipquery extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'ipquery';
+        return \Softronic\Ipquery\Ipquery::class;
     }
 }

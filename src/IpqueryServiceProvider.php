@@ -3,18 +3,21 @@
 namespace Softronic\Ipquery;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Contracts\Http\Kernel;
+use Softronic\Ipquery\Middleware\IpqueryMiddleware;
 
 class IpqueryServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        $this->app->bind('ipquery', function($app) {
+        $this->app->singleton('ipquery', function($app) {
             return new Ipquery();
         });
     }
 
     public function boot()
     {
-        $this->app['router']->aliasMiddleware('ipquery', IpqueryMiddleware::class);
+        $kernel = $this->app->make(Kernel::class);
+        $kernel->pushMiddleware(IpqueryMiddleware::class);
     }
 }
